@@ -4,7 +4,7 @@ numpy
 sentence-transformers
 torch
 requests
-beautifulsoup
+beautifulsoup4
 json
 langchain
 langsmith
