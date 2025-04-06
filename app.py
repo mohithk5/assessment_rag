@@ -3,6 +3,14 @@ import streamlit as st
 from recommendation_engine import scrape_url, prepare_input, get_recommendations,traced_get_recommendations
 from evaluate import evaluate
 import json
+import os
+import subprocess
+
+if not os.path.exists(".setup_complete"):
+    subprocess.call(["chmod", "+x", "setup.sh"])
+    subprocess.call(["./setup.sh"])
+    with open(".setup_complete", "w") as f:
+        f.write("done")
 
 st.title("SHL Assessment Recommender")
 
