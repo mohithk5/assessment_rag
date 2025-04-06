@@ -8,7 +8,7 @@ import numpy as np
 from langchain.callbacks.tracers import ConsoleCallbackHandler
 from langsmith import traceable
 
-model = SentenceTransformer("nomic_model")
+model = SentenceTransformer("nomic-ai/nomic-embed-text-v1", trust_remote_code=True)
 
 catalog = pd.read_csv("data.csv")
 embeddings = torch.load("embeddings.pth")
