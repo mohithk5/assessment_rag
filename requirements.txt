@@ -5,8 +5,7 @@ sentence-transformers
 torch
 requests
 beautifulsoup4
-json
 langchain
 langsmith
 pydantic
-git-lfs
+
