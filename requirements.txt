@@ -9,3 +9,4 @@ json
 langchain
 langsmith
 pydantic
+git-lfs
